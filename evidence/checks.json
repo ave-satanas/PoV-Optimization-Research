@@ -1,0 +1,275 @@
+{
+  "captured_utc": "2026-11-03T00:48:09.974428+00:00",
+  "source_root": "C:\\Users\\AveSatanas\\Documents\\Codex\\2026-11-01\\referenced-chatgpt-conversation-this-is-an\\work\\pov-build-optimizer",
+  "method": "static reads and JSON checks; no optimizer imports or game execution",
+  "changed_during_capture": [],
+  "snapshot_atomic": false,
+  "mutation_gate": {
+    "status": "RUNNING",
+    "log": "runs/mutation-20261103T004530Z.log",
+    "started_utc": "2026-11-03T00:45:30Z",
+    "command": "uv run python tools/mutation_check.py",
+    "running": "one gate; never start a second"
+  },
+  "corpus": [
+    {
+      "build": "blood-oath-berserker",
+      "legality": "FAIL",
+      "points": 364,
+      "nonzero_stats": 33,
+      "conditional_rows": 29,
+      "subject_stat_keys": 16,
+      "live_source_stat_keys": 4,
+      "missing_nodes": 0,
+      "dropped_choices": 6
+    },
+    {
+      "build": "crimson-cleaver",
+      "legality": "PASS",
+      "points": 227,
+      "nonzero_stats": 16,
+      "conditional_rows": 9,
+      "subject_stat_keys": 15,
+      "live_source_stat_keys": 2,
+      "missing_nodes": 0,
+      "dropped_choices": 0
+    },
+    {
+      "build": "dunin",
+      "legality": "UNKNOWN",
+      "points": 214,
+      "nonzero_stats": 21,
+      "conditional_rows": 7,
+      "subject_stat_keys": 15,
+      "live_source_stat_keys": 0,
+      "missing_nodes": 0,
+      "dropped_choices": 0
+    },
+    {
+      "build": "jester-of-axes",
+      "legality": "PASS",
+      "points": 290,
+      "nonzero_stats": 36,
+      "conditional_rows": 33,
+      "subject_stat_keys": 21,
+      "live_source_stat_keys": 8,
+      "missing_nodes": 0,
+      "dropped_choices": 0
+    },
+    {
+      "build": "minion-overlord",
+      "legality": "PASS",
+      "points": 335,
+      "nonzero_stats": 32,
+      "conditional_rows": 13,
+      "subject_stat_keys": 20,
+      "live_source_stat_keys": 3,
+      "missing_nodes": 0,
+      "dropped_choices": 0
+    },
+    {
+      "build": "phantom-strikes-dagger",
+      "legality": "PASS",
+      "points": 117,
+      "nonzero_stats": 14,
+      "conditional_rows": 4,
+      "subject_stat_keys": 12,
+      "live_source_stat_keys": 2,
+      "missing_nodes": 0,
+      "dropped_choices": 0
+    },
+    {
+      "build": "shotgun-witchhunter",
+      "legality": "PASS",
+      "points": 314,
+      "nonzero_stats": 25,
+      "conditional_rows": 12,
+      "subject_stat_keys": 17,
+      "live_source_stat_keys": 2,
+      "missing_nodes": 0,
+      "dropped_choices": 0
+    },
+    {
+      "build": "skadis-pickaxe",
+      "legality": "PASS",
+      "points": 257,
+      "nonzero_stats": 23,
+      "conditional_rows": 6,
+      "subject_stat_keys": 10,
+      "live_source_stat_keys": 3,
+      "missing_nodes": 0,
+      "dropped_choices": 0
+    },
+    {
+      "build": "sophia-dual-greatsword",
+      "legality": "PASS",
+      "points": 219,
+      "nonzero_stats": 23,
+      "conditional_rows": 22,
+      "subject_stat_keys": 14,
+      "live_source_stat_keys": 5,
+      "missing_nodes": 0,
+      "dropped_choices": 0
+    },
+    {
+      "build": "the-slayer",
+      "legality": "PASS",
+      "points": 350,
+      "nonzero_stats": 24,
+      "conditional_rows": 27,
+      "subject_stat_keys": 16,
+      "live_source_stat_keys": 7,
+      "missing_nodes": 0,
+      "dropped_choices": 0
+    }
+  ],
+  "comparisons_checked": 8,
+  "negative_conditional_node_rows": [
+    {
+      "node": "own10355",
+      "stat": "CostPct",
+      "value": -0.12,
+      "condition": "Airborne",
+      "event": null
+    },
+    {
+      "node": "own10361",
+      "stat": "CostPct",
+      "value": -0.12,
+      "condition": "Airborne",
+      "event": null
+    },
+    {
+      "node": "own10367",
+      "stat": "CostPct",
+      "value": -0.12,
+      "condition": "Airborne",
+      "event": null
+    },
+    {
+      "node": "own10373",
+      "stat": "CostPct",
+      "value": -0.3,
+      "condition": "Airborne",
+      "event": null
+    },
+    {
+      "node": "own11610",
+      "stat": "ShieldDelayPct",
+      "value": -0.25,
+      "condition": null,
+      "event": "Block"
+    },
+    {
+      "node": "own11808",
+      "stat": "CostPct",
+      "value": -0.05,
+      "condition": "Moving",
+      "event": null
+    },
+    {
+      "node": "own11826",
+      "stat": "CostPct",
+      "value": -0.05,
+      "condition": "Moving",
+      "event": null
+    },
+    {
+      "node": "own11832",
+      "stat": "CostPct",
+      "value": -0.125,
+      "condition": "Moving",
+      "event": null
+    },
+    {
+      "node": "own12078",
+      "stat": "CostPct",
+      "value": -0.075,
+      "condition": null,
+      "event": "PrimaryAttackHit"
+    },
+    {
+      "node": "own12247",
+      "stat": "ShieldDelayPct",
+      "value": -0.1875,
+      "condition": "FullEitr",
+      "event": null
+    },
+    {
+      "node": "own13130",
+      "stat": "CostPct",
+      "value": -0.1,
+      "condition": null,
+      "event": "Block"
+    },
+    {
+      "node": "own13290",
+      "stat": "CostPct",
+      "value": -0.15,
+      "condition": "OnChilledGround",
+      "event": null
+    },
+    {
+      "node": "own13316",
+      "stat": "CostPct",
+      "value": -0.1,
+      "condition": "LowStamina",
+      "event": null
+    },
+    {
+      "node": "own13340",
+      "stat": "CostPct",
+      "value": -0.1,
+      "condition": null,
+      "event": "WasHit"
+    },
+    {
+      "node": "own13561",
+      "stat": "MoveSpeedPct",
+      "value": -0.3,
+      "condition": "Airborne",
+      "event": null
+    }
+  ],
+  "synthetic_checks": {
+    "round_before_subtraction": "0.000001",
+    "round_after_subtraction": "0.000000",
+    "cheapest_route": {
+      "nodes": [
+        "a",
+        "t"
+      ],
+      "cost": 2,
+      "utility": 1
+    },
+    "best_utility_route": {
+      "nodes": [
+        "b",
+        "c",
+        "t"
+      ],
+      "cost": 3,
+      "utility": 11
+    },
+    "equal_mean_hits": {
+      "health": 8,
+      "a": [
+        5,
+        5
+      ],
+      "b": [
+        0,
+        10
+      ],
+      "lethal_fractions": [
+        0,
+        0.5
+      ]
+    }
+  },
+  "limitations": [
+    "Static files can be temporary mutation variants.",
+    "Hash recheck detects changes during capture, not all cross-file inconsistency.",
+    "Synthetic examples are mathematical counterexamples, not game simulations."
+  ]
+}

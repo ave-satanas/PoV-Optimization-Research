@@ -1,0 +1,70 @@
+{
+  "captured_utc": "2026-11-03T00:48:09.974428+00:00",
+  "source_root": "C:\\Users\\AveSatanas\\Documents\\Codex\\2026-11-01\\referenced-chatgpt-conversation-this-is-an\\work\\pov-build-optimizer",
+  "files": {
+    "HANDOFF.md": {
+      "sha256": "1abb5917964337cd82b8225f361c4a2f38cda03495a37aefbf3a1c184fdd729f",
+      "bytes": 17488
+    },
+    "RESUME.md": {
+      "sha256": "ac395d0e46e0323c5ac79c5c94f6718a17a2a08fb3d929fa86e6ffa75d314d14",
+      "bytes": 2304
+    },
+    "checkpoints/STATUS.json": {
+      "sha256": "3d7f89c4e3935d4ffd5c010b7b600fb13c34067b64fbfbc3998283660dfda80b",
+      "bytes": 1545
+    },
+    "docs/evaluation.md": {
+      "sha256": "511958faabf94320f4d57ce28e414833c8b73b7bc526536792b540f1f34e0349",
+      "bytes": 3701
+    },
+    "docs/nl-build-compiler.md": {
+      "sha256": "6691206e00ffa64cd5faf8453227e19395582d5244f2a2b732fc0db7a9d8712c",
+      "bytes": 7668
+    },
+    "src/pov_opt/evaluate.py": {
+      "sha256": "a77d926e45bba1582d9e7cfd3258873cfa466ef9fcdec7817722091d4c199835",
+      "bytes": 5062
+    },
+    "src/pov_opt/character.py": {
+      "sha256": "b7f01d5177a3c5724e02b856dad1d98121eba7b9eafd0b374fafe758b4f11c10",
+      "bytes": 3181
+    },
+    "src/pov_opt/stats.py": {
+      "sha256": "65d0eab7e8c2ed6bdb14bd3052e50584ba521b92b612960b15353b2c3d86a54c",
+      "bytes": 15853
+    },
+    "src/pov_opt/passives.py": {
+      "sha256": "e26cfb687a2dc2d361df7960e0e2ed7115c4450e34add84b4998066983c74480",
+      "bytes": 10564
+    },
+    "src/pov_opt/incoming.py": {
+      "sha256": "040c5681e6950e5ac94399f4273ec829ab88f73dd83209f1ab9cab7fb4e1559e",
+      "bytes": 7265
+    },
+    "tools/compare_builds.py": {
+      "sha256": "ce2a151be44f5a5c19d96939f5d1d89fe2e02ab03b6509eae461ab4c74fc3cdf",
+      "bytes": 1377
+    },
+    "tools/evaluate_corpus.py": {
+      "sha256": "197758103dd23141e9804e735f90662037cb0887522ebf6de1177008784f009a",
+      "bytes": 5990
+    },
+    "tests/test_evaluate.py": {
+      "sha256": "2146cca525e1fbf23ed83928cb0598f64ea02085b83df0e49423ae1ae82c5ce8",
+      "bytes": 7012
+    },
+    "reports/community/evaluation.json": {
+      "sha256": "9565715fde124d3f4db54d2b4c880fb511e71cb83df528a9fe9dd68834923de9",
+      "bytes": 194855
+    },
+    "reports/community/validation.json": {
+      "sha256": "b669a6a0ecdfef08f4951935d70c99b21a7faa5ccfd76816940d74721d0f5df1",
+      "bytes": 107336
+    },
+    "data/5.3.6/passive_nodes.json": {
+      "sha256": "a70fe75aee9e6f1b3855ae1f664af979a6d81c01b92d7bede1503ce23ed70921",
+      "bytes": 4089017
+    }
+  }
+}

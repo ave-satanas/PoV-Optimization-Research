@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "scope": "supplementary local research; no implementation changes",
+  "source_manifest": "source-manifest.json",
+  "check_results": "checks.json",
+  "findings": [
+    {
+      "id": "R01",
+      "priority": "high",
+      "kind": "interpretation",
+      "confidence": "high for captured data; runtime untested",
+      "claim": "Passive baseline values are not proven numerical lower bounds.",
+      "evidence": ["docs/evaluation.md", "src/pov_opt/evaluate.py", "data/5.3.6/passive_nodes.json: own10355, own11610"],
+      "action": "Use baseline language; prove objective-specific bounds before pruning.",
+      "note": "02-Evaluation-Interpretation.md"
+    },
+    {
+      "id": "R02",
+      "priority": "high before recommendations",
+      "kind": "consumer-boundary",
+      "confidence": "observed call chain; recheck after mutation gate",
+      "claim": "Generic comparison returns tracked stats without an attached legality outcome.",
+      "evidence": ["tools/compare_builds.py:main", "src/pov_opt/evaluate.py:evaluate", "src/pov_opt/character.py:passive_stats"],
+      "action": "Require exact-input validation before recommendation; retain descriptive mode.",
+      "note": "02-Evaluation-Interpretation.md"
+    },
+    {
+      "id": "R03",
+      "priority": "medium before ranking",
+      "kind": "precision-policy",
+      "confidence": "mathematical witness checked",
+      "claim": "Subtracting rounded evaluations differs from rounding a raw difference.",
+      "evidence": ["src/pov_opt/evaluate.py:evaluate,compare", "checks.json:synthetic_checks"],
+      "action": "Score before presentation rounding; define tolerance and deterministic ties.",
+      "note": "02-Evaluation-Interpretation.md"
+    },
+    {
+      "id": "R04",
+      "priority": "medium before scenario expansion",
+      "kind": "future-contract",
+      "confidence": "observed compatibility guard; proposed extension",
+      "claim": "Version and subjects alone will not identify a future scenario/configuration context.",
+      "evidence": ["src/pov_opt/evaluate.py:compare"],
+      "action": "Add canonical context identity when supporting multiple baselines/configurations.",
+      "note": "03-Optimization-Contract.md"
+    },
+    {
+      "id": "R05",
+      "priority": "medium",
+      "kind": "provenance-risk",
+      "confidence": "static risk; stale report not demonstrated",
+      "claim": "Saved validation is joined by build ID without checking current code/data identity in the inspected consumer.",
+      "evidence": ["tools/evaluate_corpus.py:run"],
+      "action": "Validate provenance or generate validation and evaluation together before automated recommendations.",
+      "note": "02-Evaluation-Interpretation.md"
+    },
+    {
+      "id": "R06",
+      "priority": "high before optimality claims",
+      "kind": "search-contract",
+      "confidence": "mathematical witness checked; existing routing scope documented",
+      "claim": "Minimum-cost routing to fixed targets is distinct from utility maximization under budget.",
+      "evidence": ["src/pov_opt/passives.py:route", "checks.json:synthetic_checks"],
+      "action": "Use an exhaustive tiny-graph oracle for the future value optimizer and validate progression prefixes separately.",
+      "note": "04-Progression-and-Search.md"
+    }
+  ]
+}
